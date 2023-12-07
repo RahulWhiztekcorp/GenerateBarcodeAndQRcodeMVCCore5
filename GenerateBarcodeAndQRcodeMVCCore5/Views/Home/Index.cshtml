@@ -1,0 +1,23 @@
+﻿@model GenerateBarcodeAndQRcodeMVCCore5.Models.GenerateQRCodeModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <div class="text-center">
+                <a class="btn btn-info" asp-controller="QRcode" asp-action="Index">Generate QR code</a>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="text-center">
+                <a class="btn btn-info" asp-controller="Barcode" asp-action="Index">Generate Bar code</a>
+            </div>
+        </div>
+    </div>
+</div>
